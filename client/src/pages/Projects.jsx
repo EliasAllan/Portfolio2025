@@ -18,9 +18,18 @@ const projects = [
 ];
 
 function Projects() {
+  const sectionRef = useRef(null);
   const cardsRef = useRef([]);
 
   useEffect(() => {
+    const sectionObserver = new IntersectionObserver(
+      ([entry]) => {
+        entry.target.classList.toggle('slide-in', entry.isIntersecting);
+      },
+      { threshold: 0.2 }
+    );
+    if (sectionRef.current) sectionObserver.observe(sectionRef.current);
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -35,6 +44,7 @@ function Projects() {
     });
 
     return () => {
+      if (sectionRef.current) sectionObserver.unobserve(sectionRef.current);
       cardsRef.current.forEach((card) => {
         if (card) observer.unobserve(card);
       });
@@ -42,12 +52,16 @@ function Projects() {
   }, []);
 
   return (
-    <div className="projects-page">
+    <section
+      id="projects"
+      ref={sectionRef}
+      className="projects-page slide-right"
+    >
       <h2>My Projects</h2>
       <div className="project-grid">
         {projects.map((project, index) => (
           <div
-            className="project-card"
+            className={`project-card ${index % 2 === 0 ? 'slide-left' : 'slide-right'}`}
             key={index}
             ref={(el) => (cardsRef.current[index] = el)}
           >
@@ -62,7 +76,7 @@ function Projects() {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 }
 
