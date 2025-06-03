@@ -1,0 +1,61 @@
+:root {
+  --red: #D72638;
+  --gold: #FFD700;
+  --black: #0D0D0D;
+  --text: #F8F8F8;
+  --charcoal: #1E1E1E;
+}
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--black);
+  color: var(--text);
+  margin: 0;
+  line-height: 1.6;
+}
+
+
+a {
+  color: var(--gold);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--red);
+}
+
+  
+  h1 {
+    color: #ff4500;
+  }
+  
+
+  button.cta {
+  background: var(--red);
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button.cta:hover {
+  background: var(--gold);
+  color: var(--black);
+}
+
+h1, h2, h3 {
+  font-weight: 800;
+}
+
+p {
+  font-weight: 300;
+}
+
+.navbar a {
+  font-weight: 500;
+}
