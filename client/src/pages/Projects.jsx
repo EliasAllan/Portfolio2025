@@ -61,7 +61,7 @@ function Projects() {
       <div className="project-grid">
         {projects.map((project, index) => (
           <div
-            className="project-card"
+            className={`project-card ${index % 2 === 0 ? 'slide-left' : 'slide-right'}`}
             key={index}
             ref={(el) => (cardsRef.current[index] = el)}
           >
