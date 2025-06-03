@@ -4,11 +4,17 @@ function Home() {
   return (
     <section className="hero">
       <div className="hero-content">
-        <h1>Hey, I'm Allan</h1>
-        <p>I craft bold, responsive web experiences with clean code and 🔥 design.</p>
-        <a href="/projects">
-          <button className="cta">View My Work</button>
-        </a>
+        <h1>Hi, I'm Allan</h1>
+        <p className="tagline">Full stack developer crafting modern, performant web applications.</p>
+        <p className="subtitle">I blend design sensibility with clean code to deliver polished digital experiences.</p>
+        <div className="cta-group">
+          <a href="/projects">
+            <button className="cta">View Projects</button>
+          </a>
+          <a href="/contact">
+            <button className="cta secondary">Get in Touch</button>
+          </a>
+        </div>
       </div>
     </section>
   );
