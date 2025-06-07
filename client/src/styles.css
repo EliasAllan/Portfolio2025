@@ -1,9 +1,9 @@
 :root {
-  --red: #D72638;
-  --gold: #FFD700;
-  --black: #0D0D0D;
-  --text: #F8F8F8;
-  --charcoal: #1E1E1E;
+  --red: #d72638;
+  --gold: #ffd700;
+  --black: #ffffff;
+  --text: #333333;
+  --charcoal: #f5f5f5;
 }
 
 
@@ -58,4 +58,14 @@ p {
 
 .navbar a {
   font-weight: 500;
+}
+
+.fade-slide {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.fade-slide.show {
+  opacity: 1;
+  transform: translateY(0);
 }

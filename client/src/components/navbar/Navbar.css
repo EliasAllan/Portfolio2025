@@ -3,8 +3,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #111;
-  color: white;
+  background-color: var(--charcoal);
+  color: var(--text);
   position: sticky;
   top: 0;
   z-index: 999;
@@ -21,7 +21,7 @@
 }
 
 .nav-links a {
-  color: white;
+  color: var(--text);
   text-decoration: none;
 }
 
@@ -35,7 +35,7 @@
 .hamburger span {
   width: 25px;
   height: 3px;
-  background: white;
+  background: var(--text);
   transition: 0.3s;
 }
 
@@ -55,7 +55,7 @@
     top: 60px;
     right: 0;
     flex-direction: column;
-    background-color: #111;
+    background-color: var(--charcoal);
     padding: 1rem;
     display: none;
   }
