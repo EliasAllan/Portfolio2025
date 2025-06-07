@@ -21,6 +21,7 @@ function Projects() {
 
   return (
     <div className="projects-page">
+
       <h2>My Projects</h2>
       <div className="project-grid">
         {projects.map((project, index) => (
