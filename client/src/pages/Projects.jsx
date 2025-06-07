@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import SlideInSection from '../components/SlideInSection.jsx';
 import './Projects.css';
 
 const projects = [
@@ -18,48 +18,24 @@ const projects = [
 ];
 
 function Projects() {
-  const cardsRef = useRef([]);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          entry.target.classList.toggle('slide-in', entry.isIntersecting);
-        });
-      },
-      { threshold: 0.2 }
-    );
-
-    cardsRef.current.forEach((card) => {
-      if (card) observer.observe(card);
-    });
-
-    return () => {
-      cardsRef.current.forEach((card) => {
-        if (card) observer.unobserve(card);
-      });
-    };
-  }, []);
 
   return (
     <div className="projects-page">
       <h2>My Projects</h2>
       <div className="project-grid">
         {projects.map((project, index) => (
-          <div
-            className="project-card"
-            key={index}
-            ref={(el) => (cardsRef.current[index] = el)}
-          >
-            <img src={project.img} alt={project.title} />
-            <h3>{project.title}</h3>
-            <p>{project.description}</p>
-            <div className="tech-stack">
-              {project.tech.map((tech, i) => (
-                <span key={i}>{tech}</span>
-              ))}
+          <SlideInSection key={index}>
+            <div className="project-card">
+              <img src={project.img} alt={project.title} />
+              <h3>{project.title}</h3>
+              <p>{project.description}</p>
+              <div className="tech-stack">
+                {project.tech.map((tech, i) => (
+                  <span key={i}>{tech}</span>
+                ))}
+              </div>
             </div>
-          </div>
+          </SlideInSection>
         ))}
       </div>
     </div>

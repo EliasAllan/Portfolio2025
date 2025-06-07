@@ -45,7 +45,7 @@ button.cta {
 
 button.cta:hover {
   background: var(--gold);
-  color: var(--black);
+  color: var(--text);
 }
 
 button.cta.secondary {
@@ -56,5 +56,5 @@ button.cta.secondary {
 
 button.cta.secondary:hover {
   background: var(--gold);
-  color: var(--black);
+  color: var(--text);
 }
