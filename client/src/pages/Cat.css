@@ -10,11 +10,33 @@
   position: absolute;
   font-size: 3rem;
   pointer-events: none;
-  animation: wag 0.8s infinite alternate;
-  transition: left 0.1s ease-out, top 0.1s ease-out;
+  transform-origin: center;
 }
 
-@keyframes wag {
-  from { transform: translate(-50%, -50%) rotate(-5deg); }
-  to { transform: translate(-50%, -50%) rotate(5deg); }
+.cat.walk {
+  animation: walk 0.4s infinite alternate;
+}
+
+.cat.run {
+  animation: run 0.2s infinite alternate;
+}
+
+.cat.pounce {
+  animation: pounce 0.4s ease-out forwards;
+}
+
+@keyframes walk {
+  from { transform: translate(-50%, -50%) scaleX(var(--direction)) rotate(-5deg); }
+  to { transform: translate(-50%, -50%) scaleX(var(--direction)) rotate(5deg); }
+}
+
+@keyframes run {
+  from { transform: translate(-50%, -50%) scaleX(var(--direction)) rotate(-15deg); }
+  to { transform: translate(-50%, -50%) scaleX(var(--direction)) rotate(15deg); }
+}
+
+@keyframes pounce {
+  0% { transform: translate(-50%, -50%) scaleX(var(--direction)) scale(1); }
+  50% { transform: translate(-50%, -80%) scaleX(var(--direction)) scale(1.3); }
+  100% { transform: translate(-50%, -50%) scaleX(var(--direction)) scale(1); }
 }
