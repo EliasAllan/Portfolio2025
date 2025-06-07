@@ -14,6 +14,7 @@ function Navbar() {
         <Link to="/projects" onClick={() => setMenuOpen(false)}>Projects</Link>
         <Link to="/about" onClick={() => setMenuOpen(false)}>About</Link>
         <Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link>
+        <Link to="/cat" onClick={() => setMenuOpen(false)}>Cat</Link>
       </div>
 
       <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
