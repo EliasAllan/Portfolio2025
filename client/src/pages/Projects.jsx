@@ -1,4 +1,3 @@
-import SlideInSection from '../components/SlideInSection.jsx';
 import './Projects.css';
 
 const projects = [
@@ -20,26 +19,24 @@ const projects = [
 function Projects() {
 
   return (
-    <div className="projects-page">
+    <section id="projects" className="projects-page">
 
       <h2>My Projects</h2>
       <div className="project-grid">
         {projects.map((project, index) => (
-          <SlideInSection key={index}>
-            <div className="project-card">
-              <img src={project.img} alt={project.title} />
-              <h3>{project.title}</h3>
-              <p>{project.description}</p>
-              <div className="tech-stack">
-                {project.tech.map((tech, i) => (
-                  <span key={i}>{tech}</span>
-                ))}
-              </div>
+          <div key={index} className="project-card">
+            <img src={project.img} alt={project.title} />
+            <h3>{project.title}</h3>
+            <p>{project.description}</p>
+            <div className="tech-stack">
+              {project.tech.map((tech, i) => (
+                <span key={i}>{tech}</span>
+              ))}
             </div>
-          </SlideInSection>
+          </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 }
 
