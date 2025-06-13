@@ -3,8 +3,8 @@
   align-items: center;
   gap: 2rem;
   padding: 4rem 2rem;
-  background: var(--charcoal);
-  color: var(--text-dark);
+  background: var(--black);
+  color: var(--text);
   min-height: 100vh;
 }
 

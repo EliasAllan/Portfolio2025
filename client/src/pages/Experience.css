@@ -1,7 +1,7 @@
 .experience-section {
   padding: 4rem 2rem;
-  background: var(--charcoal);
-  color: var(--text-dark);
+  background: var(--black);
+  color: var(--text);
 }
 
 .experience-section h2 {
