@@ -1,0 +1,22 @@
+.experience-section {
+  padding: 4rem 2rem;
+  background: var(--charcoal);
+  color: var(--text-dark);
+}
+
+.experience-section h2 {
+  color: var(--gold);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.experience-list {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.experience-list li {
+  margin-bottom: 1rem;
+}
