@@ -82,16 +82,16 @@
   }
   
   
-  /* Trust Section */
-  .trust {
+  /* Features */
+  .features {
     display: flex;
     justify-content: space-between;
     margin: 60px 0;
     gap: 20px;
     flex-wrap: wrap;
   }
-  
-  .trust-item {
+
+  .feature-item {
     flex: 1;
     min-width: 200px;
     text-align: center;
@@ -99,6 +99,8 @@
     background: #f7f7f7;
     border-radius: 8px;
     font-weight: bold;
+    color: inherit;
+    text-decoration: none;
   }
   
   /* Bio Preview */
@@ -109,16 +111,24 @@
   
   .bio-card {
     display: inline-block;
-    margin: 20px;
+    margin: 10px 20px;
     text-align: center;
   }
-  
+
   .bio-card img {
-    width: 150px;
-    height: 150px;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 10px;
+    margin-bottom: 6px;
+  }
+
+  .bio-card p {
+    margin: 4px 0;
+  }
+
+  .bio-role {
+    font-weight: bold;
   }
   
   .bio-link {
@@ -158,18 +168,29 @@
   
   /* Footer CTA */
   .footer-cta {
+    position: relative;
+    left: 50%;
+    margin: 60px 0 0 -50vw;
+    width: 100vw;
     text-align: center;
     padding: 60px 20px;
-    background-color: #ff4500;
+    background: linear-gradient(90deg, #ff4500, #e00000);
     color: white;
-    border-radius: 10px;
+    border-radius: 4px;
   }
-  
+
   .footer-cta h2 {
     font-size: 2rem;
     margin-bottom: 20px;
   }
-  
+
+  .footer-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
   .footer-cta button {
     padding: 14px 28px;
     font-size: 1rem;
@@ -177,13 +198,24 @@
     background: white;
     color: #ff4500;
     font-weight: bold;
-    border-radius: 6px;
+    border-radius: 4px;
     cursor: pointer;
     transition: background 0.3s ease;
   }
-  
+
   .footer-cta button:hover {
     background: #f0f0f0;
+  }
+
+  .footer-cta .ghost {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+  }
+
+  .trust-line {
+    margin-top: 15px;
+    font-size: 0.85rem;
   }
   
   @media (max-width: 768px) {
