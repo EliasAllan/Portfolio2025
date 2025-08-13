@@ -4,9 +4,9 @@ import "../styles/about.css";
 export default function About() {
   return (
     <div className="about-container">
-      <h1 className="about-title">About Us</h1>
+      <h1 className="about-title">About</h1>
 
-      {/* Mom Section */}
+      {/* Allan Section */}
       <Motion.div
         className="about-section"
         initial={{ opacity: 0, x: 100 }}
@@ -14,17 +14,15 @@ export default function About() {
         transition={{ duration: 0.8 }}
         viewport={{ once: true, amount: 0.5 }}
       >
-        <img src="/images/marie.jpg" alt="Mom" className="about-image mom-image" />
+        <img src="/images/allan-home.jpg" alt="Allan" className="about-image" />
         <div className="about-text">
-          <h2>Marie Street</h2>
-          <p>
-            I’m a certified personal trainer with a passion for movement and healthy
-            living. I help others realize their strength no matter their age!
-          </p>
+          <h2>Allan Elias</h2>
+          <p>Lead Developer, UX-minded Frontend.</p>
+          <p>Building performant, accessible web apps with modern tools.</p>
         </div>
       </Motion.div>
 
-      {/* Allan Section */}
+      {/* Advisor Section */}
       <Motion.div
         className="about-section reverse"
         initial={{ opacity: 0, x: -100 }}
@@ -32,14 +30,12 @@ export default function About() {
         transition={{ duration: 0.8 }}
         viewport={{ once: true, amount: 0.5 }}
       >
+        <img src="/images/marie-home.jpg" alt="Marie" className="about-image mom-image" />
         <div className="about-text">
-          <h2>Allan Elias</h2>
-          <p>
-            I’m a fitness enthusiast dedicated to helping people feel
-            strong, confident, and supported in every step of their journey.
-          </p>
+          <h2>Marie Street</h2>
+          <p>Partner & Advisor</p>
+          <p>Supporting strategy and client success throughout projects.</p>
         </div>
-        <img src="/images/allan-deadlift.jpg" alt="Allan" className="about-image" />
       </Motion.div>
     </div>
   );

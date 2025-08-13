@@ -26,23 +26,32 @@ export default function Home() {
         <div className="hero-image-bg"></div>
       </Motion.section>
 
-      {/* Trust Section */}
+      {/* Feature Pills */}
       <Motion.section
-        className="trust"
+        className="features"
         initial={{ opacity: 0, x: 50 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: false, amount: 0.5 }}
       >
-        <div className="trust-item">
-          <h3>💪 Family-Owned & Operated</h3>
-        </div>
-        <div className="trust-item">
-          <h3>🧠 Certified & Personalized Plans</h3>
-        </div>
-        <div className="trust-item">
-          <h3>🧓 Age-Inclusive Training</h3>
-        </div>
+        <a href="/services" className="feature-item">
+          <h3>⚡ Blazing-fast Sites</h3>
+        </a>
+        <a href="/services" className="feature-item">
+          <h3>📱 Responsive by Default</h3>
+        </a>
+        <a href="/services" className="feature-item">
+          <h3>🔍 SEO Foundations</h3>
+        </a>
+        <a href="/services" className="feature-item">
+          <h3>🛠️ Modern Stack (MERN)</h3>
+        </a>
+        <a href="/services" className="feature-item">
+          <h3>🔒 Secure & Accessible</h3>
+        </a>
+        <a href="/services" className="feature-item">
+          <h3>🚀 Deployed on Vercel</h3>
+        </a>
       </Motion.section>
 
       {/* Bio Preview */}
@@ -56,12 +65,18 @@ export default function Home() {
         <div className="bio-card">
           <img src="/images/allan-home.jpg" alt="Allan" />
           <h4>Allan Elias</h4>
-          <p>Certified Personal Trainer. Transformation Coach.</p>
+          <p className="bio-role">Lead Developer, UX-minded Frontend</p>
+          <p className="bio-desc">
+            Crafting fast, accessible interfaces for modern web apps.
+          </p>
         </div>
         <div className="bio-card">
-          <img src="/images/marie-home.jpg" alt="Mom" />
+          <img src="/images/marie-home.jpg" alt="Marie" />
           <h4>Marie Street</h4>
-          <p>Strength & Wellness Mentor. Age-Friendly Fitness Expert.</p>
+          <p className="bio-role">Partner & Advisor</p>
+          <p className="bio-desc">
+            Strategic insight and client empathy in every collaboration.
+          </p>
         </div>
         <a href="/about" className="bio-link">Read More →</a>
       </Motion.section>
@@ -91,7 +106,17 @@ export default function Home() {
         viewport={{ once: false, amount: 0.5 }}
       >
         <h2>Ready to build?</h2>
-        <a href="/book"><button>Schedule a Consultation</button></a>
+        <div className="footer-buttons">
+          <a href="/book">
+            <button>Schedule a Consultation</button>
+          </a>
+          <a href="/pricing">
+            <button className="ghost">See Pricing</button>
+          </a>
+        </div>
+        <p className="trust-line">
+          Average 1–2 week delivery • Free homepage mockup
+        </p>
       </Motion.section>
     </div>
   );

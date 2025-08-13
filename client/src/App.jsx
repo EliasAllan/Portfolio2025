@@ -4,6 +4,8 @@ import Home from './pages/Home';
 import About from './pages/About';
 import SuccessStories from './pages/SuccessStories';
 import BookSession from './pages/BookSession';
+import Services from './pages/Services';
+import Pricing from './pages/Pricing';
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/stories" element={<SuccessStories />} />
         <Route path="/book" element={<BookSession />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/pricing" element={<Pricing />} />
       </Routes>
     </Router>
   );
