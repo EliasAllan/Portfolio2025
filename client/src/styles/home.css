@@ -1,8 +1,8 @@
 /* General layout */
 .home-container {
     font-family: Arial, sans-serif;
-    color: #222;
-    background: #fff;
+    color: var(--text-color);
+    background: var(--background-color);
     padding: 40px 20px;
     max-width: 1200px;
     margin: 0 auto;
@@ -64,7 +64,7 @@
     border: none;
     cursor: pointer;
     margin-right: 15px;
-    background-color: #ff4500;
+    background-color: var(--primary-color);
     color: white;
     border-radius: 5px;
     transition: background 0.3s ease, transform 0.2s ease;
@@ -72,12 +72,12 @@
   
   .hero-buttons .outline {
     background-color: transparent;
-    color: #ff4500;
-    border: 2px solid #ff4500;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
   }
   
   .hero-buttons button:hover {
-    background-color: #e03e00;
+    background-color: var(--primary-hover);
     transform: translateY(-2px);
   }
   
@@ -96,7 +96,7 @@
     min-width: 200px;
     text-align: center;
     padding: 20px;
-    background: #f7f7f7;
+    background: var(--card-bg-color);
     border-radius: 8px;
     font-weight: bold;
     color: inherit;
@@ -136,17 +136,17 @@
     margin-top: 20px;
     font-weight: bold;
     text-decoration: none;
-    color: #ff4500;
+    color: var(--primary-color);
   }
   
   /* Testimonials */
   .testimonials {
-    background: #fefefe;
+    background: var(--section-divider-bg);
     padding: 40px;
     text-align: center;
     margin-bottom: 60px;
-    border-top: 2px solid #eee;
-    border-bottom: 2px solid #eee;
+    border-top: 2px solid var(--section-divider-bg);
+    border-bottom: 2px solid var(--section-divider-bg);
   }
   
   .testimonials h2 {
@@ -174,7 +174,7 @@
     width: 100vw;
     text-align: center;
     padding: 60px 20px;
-    background: linear-gradient(90deg, #ff4500, #e00000);
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-hover));
     color: white;
     border-radius: 4px;
   }
@@ -196,7 +196,7 @@
     font-size: 1rem;
     border: none;
     background: white;
-    color: #ff4500;
+    color: var(--primary-color);
     font-weight: bold;
     border-radius: 4px;
     cursor: pointer;

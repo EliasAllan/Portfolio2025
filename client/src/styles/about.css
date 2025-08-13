@@ -3,7 +3,8 @@
     margin: 0 auto;
     padding: 60px 20px;
     font-family: Arial, sans-serif;
-    color: #333;
+    color: var(--text-color);
+    background: var(--background-color);
   }
   
   .about-title {
