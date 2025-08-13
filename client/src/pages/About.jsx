@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion as Motion } from "framer-motion";
 import "../styles/about.css";
 
 export default function About() {
@@ -7,7 +7,7 @@ export default function About() {
       <h1 className="about-title">About Us</h1>
 
       {/* Mom Section */}
-      <motion.div
+      <Motion.div
         className="about-section"
         initial={{ opacity: 0, x: 100 }}
         whileInView={{ opacity: 1, x: 0 }}
@@ -22,10 +22,10 @@ export default function About() {
             living. I help others realize their strength no matter their age!
           </p>
         </div>
-      </motion.div>
+      </Motion.div>
 
       {/* Allan Section */}
-      <motion.div
+      <Motion.div
         className="about-section reverse"
         initial={{ opacity: 0, x: -100 }}
         whileInView={{ opacity: 1, x: 0 }}
@@ -40,7 +40,7 @@ export default function About() {
           </p>
         </div>
         <img src="/images/allan-deadlift.jpg" alt="Allan" className="about-image" />
-      </motion.div>
+      </Motion.div>
     </div>
   );
 }

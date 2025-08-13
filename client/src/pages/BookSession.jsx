@@ -1,5 +1,3 @@
-import { useState } from 'react';
-import { motion } from 'framer-motion';
 import { InlineWidget } from "react-calendly";
 import "../styles/booksession.css";
 
@@ -114,7 +112,7 @@ import "../styles/booksession.css";
 function BookSession() {
   return (
     <div className="container ">
-      <h2>Book a Session</h2>
+      <h2>Schedule a Consultation</h2>
       <p>Choose a time that works best for you using the calendar below.</p>
       <div className='widget-container'>
         <InlineWidget

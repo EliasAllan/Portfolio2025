@@ -1,33 +1,33 @@
-import { motion } from "framer-motion";
+import { motion as Motion } from "framer-motion";
 import "../styles/home.css";
 
 export default function Home() {
   return (
     <div className="home-container">
       {/* Hero Section */}
-      <motion.section
+      <Motion.section
         className="hero"
-        initial={{ opacity: 0, x: -50 }}
-        whileInView={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true, amount: 0.5 }}
       >
         <div className="hero-text">
-          <h1>Train with Heart. Transform for Life.</h1>
+          <h1>Build with Heart. Transform Your Online Presence.</h1>
           <p>
-            Personal training that empowers every generation — from seasoned
-            lifters to first-time movers.
+            Web development that empowers businesses of every size — from
+            startups to established brands.
           </p>
           <div className="hero-buttons">
-            <a href="/book"><button>Book a Session</button></a>
-            <a href="/stories"><button className="outline">View Success Stories</button></a>
+            <a href="/book"><button>Schedule a Consultation</button></a>
+            <a href="/stories"><button className="outline">View Client Projects</button></a>
           </div>
         </div>
         <div className="hero-image-bg"></div>
-      </motion.section>
+      </Motion.section>
 
       {/* Trust Section */}
-      <motion.section
+      <Motion.section
         className="trust"
         initial={{ opacity: 0, x: 50 }}
         whileInView={{ opacity: 1, x: 0 }}
@@ -43,10 +43,10 @@ export default function Home() {
         <div className="trust-item">
           <h3>🧓 Age-Inclusive Training</h3>
         </div>
-      </motion.section>
+      </Motion.section>
 
       {/* Bio Preview */}
-      <motion.section
+      <Motion.section
         className="bio-preview"
         initial={{ opacity: 0, x: -50 }}
         whileInView={{ opacity: 1, x: 0 }}
@@ -64,10 +64,10 @@ export default function Home() {
           <p>Strength & Wellness Mentor. Age-Friendly Fitness Expert.</p>
         </div>
         <a href="/about" className="bio-link">Read More →</a>
-      </motion.section>
+      </Motion.section>
 
       {/* Testimonials */}
-      {/* <motion.section
+      {/* <Motion.section
         className="testimonials"
         initial={{ opacity: 0, x: 50 }}
         whileInView={{ opacity: 1, x: 0 }}
@@ -80,19 +80,19 @@ export default function Home() {
           things I’ve ever done. I feel stronger at 60 than I did at 30.”
         </blockquote>
         <cite>— Placeholder</cite>
-      </motion.section> */}
+      </Motion.section> */}
 
       {/* Footer CTA */}
-      <motion.section
+      <Motion.section
         className="footer-cta"
         initial={{ opacity: 0, x: -50 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: false, amount: 0.5 }}
       >
-        <h2>Ready to transform?</h2>
-        <a href="/book"><button>Book Your Session</button></a>
-      </motion.section>
+        <h2>Ready to build?</h2>
+        <a href="/book"><button>Schedule a Consultation</button></a>
+      </Motion.section>
     </div>
   );
 }
