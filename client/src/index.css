@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
 :root {
-  --primary-color: #ff4500;
-  --text-color: #333;
-  --background-color: #ffffff;
+  --primary-color: #FF6B35;
+  --primary-hover: #FF8C42;
+  --background-color: #F5F6FA;
+  --card-bg-color: #FFFFFF;
+  --section-divider-bg: #ECEEF3;
+  --heading-color: #111827;
+  --text-color: #374151;
+  --dark-base-color: #1E1E2F;
   --font-family: 'Inter', system-ui, sans-serif;
 }
 
@@ -36,7 +41,7 @@ body {
 /* Typography */
 h1, h2, h3 {
   font-weight: 700;
-  color: var(--text-color);
+  color: var(--heading-color);
 }
 
 h1 {
@@ -76,7 +81,7 @@ button,
 
 button:hover,
 .btn-primary:hover {
-  background-color: #d43d00;
+  background-color: var(--primary-hover);
 }
 
 /* Forms */
@@ -91,8 +96,8 @@ input, select, textarea {
 
 /* Navbar */
 .navbar {
-  background: white;
-  border-bottom: 1px solid #eee;
+  background: var(--dark-base-color);
+  border-bottom: 1px solid var(--section-divider-bg);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -132,7 +137,7 @@ input, select, textarea {
 }
 
 .nav-links li a {
-  color: var(--text-color);
+  color: #fff;
   text-decoration: none;
   font-weight: 600;
   transition: color 0.2s ease;
@@ -150,7 +155,7 @@ input, select, textarea {
   .nav-links {
     display: none;
     flex-direction: column;
-    background: white;
+    background: var(--dark-base-color);
     position: absolute;
     top: 100%;
     left: 0;
