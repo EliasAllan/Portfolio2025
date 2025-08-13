@@ -1,21 +1,23 @@
-import Navbar from './components/navbar/Navbar.jsx';
-import Home from './pages/Home.jsx';
-import Experience from './pages/Experience.jsx';
-import Projects from './pages/Projects.jsx';
-import Bio from './pages/About.jsx';
-import Footer from './components/footer/Footer.jsx';
+import Navbar from './components/Navbar'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import About from './pages/About';
+import SuccessStories from './pages/SuccessStories';
+import BookSession from './pages/BookSession';
 
 function App() {
   return (
-    <>
+    <Router>
       <Navbar />
-      <Home />
-      <Experience />
-      <Projects />
-      <Bio />
-      <Footer />
-    </>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/stories" element={<SuccessStories />} />
+        <Route path="/book" element={<BookSession />} />
+      </Routes>
+    </Router>
   );
 }
+
 
 export default App;

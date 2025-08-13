@@ -1,5 +1,25 @@
 {
   "dependencies": {
-    "react-router-dom": "^7.6.1"
-  }
+    "react-calendly": "^4.3.1",
+    "vite": "^6.3.2"
+  },
+  "name": "personal-trainer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EliasAllan/personal-trainer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/EliasAllan/personal-trainer/issues"
+  },
+  "homepage": "https://github.com/EliasAllan/personal-trainer#readme"
 }
