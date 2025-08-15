@@ -23,7 +23,7 @@ export default function About() {
       </Motion.div>
 
       {/* Advisor Section */}
-      <Motion.div
+      {/* <Motion.div
         className="about-section reverse"
         initial={{ opacity: 0, x: -100 }}
         whileInView={{ opacity: 1, x: 0 }}
@@ -36,7 +36,7 @@ export default function About() {
           <p>Partner & Advisor</p>
           <p>Supporting strategy and client success throughout projects.</p>
         </div>
-      </Motion.div>
+      </Motion.div> */}
     </div>
   );
 }

@@ -20,7 +20,7 @@ export default function Home() {
           </p>
           <div className="hero-buttons">
             <a href="/book"><button>Schedule a Consultation</button></a>
-            <a href="/stories"><button className="outline">View Client Projects</button></a>
+            <a href="/stories"><button className="outline">View Projects</button></a>
           </div>
         </div>
         <div className="hero-image-bg"></div>
@@ -35,7 +35,7 @@ export default function Home() {
         viewport={{ once: false, amount: 0.5 }}
       >
         <a href="/services" className="feature-item">
-          <h3>⚡ Blazing-fast Sites</h3>
+          <h3>⚡ Blazing-fast Websites</h3>
         </a>
         <a href="/services" className="feature-item">
           <h3>📱 Responsive by Default</h3>
@@ -70,14 +70,14 @@ export default function Home() {
             Crafting fast, accessible interfaces for modern web apps.
           </p>
         </div>
-        <div className="bio-card">
+        {/* <div className="bio-card">
           <img src="/images/marie-home.jpg" alt="Marie" />
           <h4>Marie Street</h4>
           <p className="bio-role">Partner & Advisor</p>
           <p className="bio-desc">
             Strategic insight and client empathy in every collaboration.
           </p>
-        </div>
+        </div> */}
         <a href="/about" className="bio-link">Read More →</a>
       </Motion.section>
 

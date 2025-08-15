@@ -3,7 +3,7 @@ function SuccessStories() {
       <div className="page-body" style={{ padding: '2rem' }}>
         <h2 style={{ fontSize: '2rem', marginBottom: '1rem' }}>Client Transformations</h2>
         <p style={{ maxWidth: '600px', marginBottom: '1rem' }}>
-          Real people. Real results. Here are some of the amazing transformations our clients have achieved with consistency and the right guidance.
+          Here are some of the amazing results our clients have achieved with the right technology.
         </p>
         <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
           <div style={{
