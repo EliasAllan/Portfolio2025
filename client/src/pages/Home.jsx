@@ -38,16 +38,16 @@ export default function Home() {
           <h3>⚡ Blazing-fast Websites</h3>
         </a>
         <a href="/services" className="feature-item">
-          <h3>📱 Responsive by Default</h3>
+          <h3>📱 Works on Desktop and Mobile</h3>
         </a>
         <a href="/services" className="feature-item">
-          <h3>🔍 SEO Foundations</h3>
+          <h3>🔍 Optimized to be found by search engines</h3>
         </a>
         <a href="/services" className="feature-item">
-          <h3>🛠️ Modern Stack (MERN)</h3>
+          <h3>🛠️ Modern Technology (MERN)</h3>
         </a>
         <a href="/services" className="feature-item">
-          <h3>🔒 Secure & Accessible</h3>
+          <h3>🔒 Secure & Easy to access</h3>
         </a>
         <a href="/services" className="feature-item">
           <h3>🚀 Deployed on Vercel</h3>
