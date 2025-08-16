@@ -1,0 +1,23 @@
+.projects-container {
+  padding: 2rem;
+}
+
+.projects-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.project-item {
+  text-align: center;
+}
+
+.project-item img {
+  width: 100%;
+  border-radius: 8px;
+}
