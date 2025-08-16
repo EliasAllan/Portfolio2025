@@ -20,7 +20,7 @@ export default function Home() {
           </p>
           <div className="hero-buttons">
             <a href="/book"><button>Schedule a Consultation</button></a>
-            <a href="/stories"><button className="outline">View Projects</button></a>
+            <a href="/projects"><button className="outline">View Projects</button></a>
           </div>
         </div>
         <div className="hero-image-bg"></div>

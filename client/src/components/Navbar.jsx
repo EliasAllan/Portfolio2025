@@ -29,7 +29,11 @@ function Navbar() {
             About
           </NavLink>
         </li>
-        {/* <li><NavLink to="/stories" onClick={() => setOpen(false)}>Success Stories</NavLink></li> */}
+        <li>
+          <NavLink to="/projects" onClick={() => setOpen(false)}>
+            Projects
+          </NavLink>
+        </li>
         <li>
           <NavLink to="/book" onClick={() => setOpen(false)}>
             Schedule a Consultation
