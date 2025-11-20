@@ -1,9 +1,9 @@
 import "../styles/projects.css";
 
-const projects = Array.from({ length: 16 }, (_, i) => ({
+const projects = Array.from({ length: 4 }, (_, i) => ({
   id: i + 1,
   name: `Website ${i + 1}`,
-  image: `https://via.placeholder.com/200x150?text=Project+${i + 1}`,
+  image: `https://via.placeholder.com/200x150?text=Project+ ${i + 1}`,
 }));
 
 export default function Projects() {

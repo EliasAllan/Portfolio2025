@@ -10,9 +10,9 @@ function Navbar() {
       <div className="nav-header">
         <div className="brand">
           <Link to="/" className="logo">
-            <img src="/images/NevesFit.png" alt="NevesFit Logo" className="logo-image" />
+            <img src="/images/NevesCodePng.png" alt="NevesCode Logo" className="logo-image" />
           </Link>
-          <span className="tagline">by Allan Web Development</span>
+          <span className="tagline"></span>
         </div>
         <button className="hamburger" onClick={() => setOpen(!open)}>
           ☰
