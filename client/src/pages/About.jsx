@@ -17,8 +17,11 @@ export default function About() {
         <img src="/images/allan-home.jpg" alt="Allan" className="about-image" />
         <div className="about-text">
           <h2>Allan Elias</h2>
-          <p>Lead Developer, UX-minded Frontend.</p>
-          <p>Building performant, accessible web apps with modern tools.</p>
+          {/* <p>Lead Developer, UX-minded Frontend.</p>
+          <p>Building performant, accessible web apps with modern tools.</p> */}
+          <p>I’m Allan Elias — a freelance web developer who helps small businesses turn ideas into clean, fast, modern websites.</p>
+          <p>I specialize in building responsive interfaces, smooth user experiences, and simple systems that make your business look professional online.</p>
+          <p>When I’m not coding, I’m a bartender  — which means I actually understand what real customers respond to. My goal is to combine design, psychology, and modern tools to help your brand stand out.</p>
         </div>
       </Motion.div>
 
