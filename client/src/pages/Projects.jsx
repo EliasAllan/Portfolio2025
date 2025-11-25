@@ -11,7 +11,7 @@ const projects = [
     id: 2,
     name: "NevesFit (Personal trainer website)",
     image: "/images/NevesFitLanding.png",
-    link: "https://yourlink.com",
+    link: "https://personal-trainer-liard.vercel.app/",
   },
   // {
   //   id: 3,
