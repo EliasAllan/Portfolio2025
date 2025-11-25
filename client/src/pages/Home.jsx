@@ -1,5 +1,6 @@
 import { motion as Motion } from "framer-motion";
 import "../styles/home.css";
+import {Link} from 'react-router-dom'
 
 export default function Home() {
   return (
@@ -19,8 +20,8 @@ export default function Home() {
             startups to established brands.
           </p>
           <div className="hero-buttons">
-            <a href="/book"><button>Schedule a Consultation</button></a>
-            <a href="/projects"><button className="outline">View Projects</button></a>
+            <Link to="/book"><button>Schedule a Consultation</button></Link>
+            <Link to="/projects"><button className="outline">View Projects</button></Link>
           </div>
         </div>
         <div className="hero-image-bg"></div>
