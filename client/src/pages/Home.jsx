@@ -34,24 +34,24 @@ export default function Home() {
         animate={{ opacity: 1, y: 0 }}          // 👈 changed from whileInView
         transition={{ duration: 0.8 }}
       >
-        <a href="/services" className="feature-item">
+        <Link to="/services" className="feature-item">
           <h3>⚡ Blazing-fast Websites</h3>
-        </a>
-        <a href="/services" className="feature-item">
+        </Link>
+        <Link to="/services" className="feature-item">
           <h3>📱 Works on Desktop and Mobile</h3>
-        </a>
-        <a href="/services" className="feature-item">
+        </Link>
+        <Link to="/services" className="feature-item">
           <h3>🔍 Optimized to be found by search engines</h3>
-        </a>
-        <a href="/services" className="feature-item">
+        </Link>
+        <Link to="/services" className="feature-item">
           <h3>🛠️ Modern Technology (MERN)</h3>
-        </a>
-        <a href="/services" className="feature-item">
+        </Link>
+        <Link to="/services" className="feature-item">
           <h3>🔒 Secure & Easy to access</h3>
-        </a>
-        <a href="/services" className="feature-item">
+        </Link>
+        <Link to="/services" className="feature-item">
           <h3>🚀 Deployed on Vercel</h3>
-        </a>
+        </Link>
       </Motion.section>
 
       {/* Bio Preview */}
@@ -78,7 +78,7 @@ export default function Home() {
             Strategic insight and client empathy in every collaboration.
           </p>
         </div> */}
-        <a href="/about" className="bio-link">Read More →</a>
+        <Link to="/about" className="bio-link">Read More →</Link>
       </Motion.section>
 
       {/* Testimonials */}
@@ -107,12 +107,12 @@ export default function Home() {
       >
         <h2>Ready to build?</h2>
         <div className="footer-buttons">
-          <a href="/book">
+          <Link to="/book">
             <button>Schedule a Consultation</button>
-          </a>
-          <a href="/pricing">
+          </Link>
+          <Link to="/pricing">
             <button className="ghost">See Pricing</button>
-          </a>
+          </Link>
         </div>
         <p className="trust-line">
           Average 1–2 week delivery • Free homepage mockup
