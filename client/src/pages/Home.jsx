@@ -28,12 +28,11 @@ export default function Home() {
       </Motion.section>
 
       {/* Feature Pills */}
-      <Motion.section
-        className="features"
-        initial={{ opacity: 0, x: 50 }}
-        whileInView={{ opacity: 1, x: 0 }}
+       <Motion.section
+        className="hero"
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}          // 👈 changed from whileInView
         transition={{ duration: 0.8 }}
-        viewport={{ once: false, amount: 0.5 }}
       >
         <a href="/services" className="feature-item">
           <h3>⚡ Blazing-fast Websites</h3>
