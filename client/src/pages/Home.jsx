@@ -1,8 +1,13 @@
 import { motion as Motion } from "framer-motion";
 import "../styles/home.css";
 import {Link} from 'react-router-dom'
+import { useEffect } from "react";
+
 
 export default function Home() {
+  useEffect(() => {
+  window.scrollTo({ top: 100, behavior: "auto" });
+}, []);
   return (
     <div className="home-container">
       {/* Hero Section */}

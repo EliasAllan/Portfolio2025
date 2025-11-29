@@ -13,18 +13,18 @@ const projects = [
     image: "/images/NevesFitLanding.png",
     link: "https://personal-trainer-liard.vercel.app/",
   },
-  // {
-  //   id: 3,
-  //   name: "Cocktail Findifier App",
-  //   image: "/images/CocktailFindifierLanding.png",
-  //   link: "https://yourlink.com",
-  // },
-  // {
-  //   id: 4,
-  //   name: "Cocktail Findifier App",
-  //   image: "/images/CocktailFindifierLanding.png",
-  //   link: "https://yourlink.com",
-  // },
+  {
+    id: 3,
+    name: "Dumpster Fire Newsletter",
+    image: "/images/DumpsterFireLanding.png",
+    link: "https://dfnewsletter.vercel.app/",
+  },
+  {
+    id: 4,
+    name: "Level Up Legally",
+    image: "/images/LevelUpLanding.png",
+    link: "https://www.levelup-legally.com/",
+  },
 ];
 
 export default function Projects() {
