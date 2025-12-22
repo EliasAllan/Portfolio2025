@@ -1,7 +1,11 @@
 import { motion as Motion } from "framer-motion";
 import "../styles/about.css";
+import { useEffect } from "react";
 
 export default function About() {
+  useEffect(() => {
+    window.scrollTo({ top: 100, behavior: "auto" });
+  }, []);
   return (
     <div className="about-container">
       <h1 className="about-title">About</h1>
