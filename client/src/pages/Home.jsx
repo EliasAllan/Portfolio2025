@@ -115,7 +115,7 @@ export default function Home() {
           <Link to="/book">
             <button>Schedule a Consultation</button>
           </Link>
-          <Link to="/pricing">
+          <Link to="/services">
             <button className="ghost">See Pricing</button>
           </Link>
         </div>
